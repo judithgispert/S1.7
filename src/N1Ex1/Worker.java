@@ -4,9 +4,9 @@ public class Worker {
 	
 	protected String name;
 	protected String surname;
-	protected float priceHour;
+	protected int priceHour;
 	
-	public Worker (String name, String surname, float priceHour) {
+	public Worker (String name, String surname, int priceHour) {
 		this.name = name;
 		this.surname = surname;
 		this.priceHour = priceHour;
@@ -18,7 +18,7 @@ public class Worker {
 	public String getSurname() {
 		return surname;
 	}
-	public float getPriceHour() {
+	public int getPriceHour() {
 		return priceHour;
 	}
 	
@@ -28,12 +28,12 @@ public class Worker {
 	public void setSurame(String surname) {
 		this.surname = surname;
 	}
-	public void setPreuHora(float priceHour) {
+	public void setPreuHora(int priceHour) {
 		this.priceHour = priceHour;
 	}
 	
 	
-	public float calculateSalary(float hoursWorked) {
+	public int calculateSalary(int hoursWorked) {
 		return (priceHour * hoursWorked);
 		
 	}

@@ -2,23 +2,23 @@ package N1Ex1;
 
 public class OfficeWorker extends Worker{
 
-	private static float gasoline;
+	private static int gasoline;
 	
-	public OfficeWorker(String name, String surname, float priceHour, float gasoline) {
+	public OfficeWorker(String name, String surname, int priceHour, int gasoline) {
 		super(name, surname, priceHour);
 		this.gasoline = gasoline;
 	}
 	
-	public float getGasoline() {
+	public int getGasoline() {
 		return gasoline;
 	}
 	
-	public void setGasoline (float gasoline) {
+	public void setGasoline (int gasoline) {
 		this.gasoline = gasoline;
 	}
 	
 	@Override
-	public float calculateSalary(float hoursWorked) {
+	public int calculateSalary(int hoursWorked) {
 		return super.calculateSalary(hoursWorked) + gasoline;
 	}
 	

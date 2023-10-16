@@ -2,23 +2,23 @@ package N1Ex1;
 
 public class OnlineWorker extends Worker{
 
-	private float internetPrice;
+	private int internetPrice;
 	
-	public OnlineWorker(String name, String surname, float priceHour, float internetPrice) {
+	public OnlineWorker(String name, String surname, int priceHour, int internetPrice) {
 		super(name, surname, priceHour);
 		this.internetPrice = internetPrice;
 	}
 	
-	public float getInternetPrice() {
+	public int getInternetPrice() {
 		return internetPrice;
 	}
 	
-	public void setInternetPrice (float internetPrice) {
+	public void setInternetPrice (int internetPrice) {
 		this.internetPrice = internetPrice;
 	}
 	
 	@Override
-	public float calculateSalary(float hoursWorked) {
+	public int calculateSalary(int hoursWorked) {
 		return super.calculateSalary(hoursWorked) + internetPrice;
 	}
 	
