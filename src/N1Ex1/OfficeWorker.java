@@ -12,10 +12,7 @@ public class OfficeWorker extends Worker{
 	public int getGasoline() {
 		return gasoline;
 	}
-	
-	public void setGasoline (int gasoline) {
-		this.gasoline = gasoline;
-	}
+
 	
 	@Override
 	public int calculateSalary(int hoursWorked) {
