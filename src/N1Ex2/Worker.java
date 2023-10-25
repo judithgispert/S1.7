@@ -38,6 +38,7 @@ public class Worker {
 		
 	}
 	
+	@Override
 	public String toString() {
 		return "Worker name and surname: " + name + " " + surname + ". Price by hour: " + priceHour + "€. ";
 	}
